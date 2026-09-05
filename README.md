@@ -29,6 +29,10 @@ Using the 281 MCP tools, your AI agent can start/stop bots, execute trades, conf
 
 ## Pricing
 
+**This MCP server is 100% free.**
+
+The Solana Sniper Bot V4 Windows application (required to use this MCP server) has the following pricing:
+
 - **7-day free trial** (168 hours of actual bot running time)
 - **First month: $49.99** (50% off with promo code `SOLV4FIRST50`)
 - **$99.99/month** thereafter
@@ -192,8 +196,8 @@ pip install solana-snipe-bot-mcp
 - **PyPI:** [https://pypi.org/project/solana-snipe-bot-mcp/](https://pypi.org/project/solana-snipe-bot-mcp/)
 - **MCP Registry:** `co.solsniperbot/solana-snipe-bot-mcp`
 - **Smithery:** [https://smithery.ai/servers/mcleer-michael/solana-snipe-bot-mcp](https://smithery.ai/servers/mcleer-michael/solana-snipe-bot-mcp)
-- **Subscribe:** [https://buy.stripe.com/dRm14ngiB5MBfIK6QM7bW07](https://buy.stripe.com/dRm14ngiB5MBfIK6QM7bW07?prefilled_promo_code=SOLV4FIRST50)
+- **Subscribe (app):** [https://buy.stripe.com/dRm14ngiB5MBfIK6QM7bW07](https://buy.stripe.com/dRm14ngiB5MBfIK6QM7bW07?prefilled_promo_code=SOLV4FIRST50)
 
 ## License
 
-Proprietary. Membership required for live trading after the 7-day trial. Use at your own risk. On-chain trading is risky.
+MCP server: MIT (free). The Solana Sniper Bot V4 Windows application is proprietary — membership required for live trading after the 7-day trial. Use at your own risk. On-chain trading is risky.
