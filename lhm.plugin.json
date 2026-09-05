@@ -1,0 +1,1152 @@
+{
+  "description": "Autonomous Solana trading bot with 281 MCP tools across Meme sniping (Pump.fun), Spot trading (Jupiter), Perpetual futures (long/short with leverage), and Mirror copy-trading modes. Requires the Solana Sniper Bot V4 Windows application.",
+  "identifier": "solara-sniper-bot-solana-snipe-bot-mcp",
+  "name": "Solana Sniper Bot MCP",
+  "version": "4.0.3",
+  "homepage": "https://solsniperbot.co/mcp/",
+  "author": "solara-sniper-bot",
+  "authorUrl": "https://github.com/solara-sniper-bot",
+  "category": "developer",
+  "tags": [
+    "solana",
+    "trading",
+    "crypto",
+    "meme",
+    "pump.fun",
+    "jupiter",
+    "perpetuals",
+    "futures",
+    "defi",
+    "sniper",
+    "bot",
+    "mirror-trading",
+    "copy-trading"
+  ],
+  "tools": [
+    {
+      "name": "start_bot",
+      "description": "Start the snipe bot (equivalent to clicking 'Start Bot' in the GUI)."
+    },
+    {
+      "name": "stop_bot",
+      "description": "Stop the snipe bot (equivalent to clicking 'Stop Bot' in the GUI)."
+    },
+    {
+      "name": "set_trading_mode",
+      "description": "Switch between practice and live trading, matching the GUI mode button."
+    },
+    {
+      "name": "sell_all",
+      "description": "Panic sell — liquidate ALL open positions immediately."
+    },
+    {
+      "name": "sell_position",
+      "description": "Sell a single position by mint address immediately."
+    },
+    {
+      "name": "buy_mint",
+      "description": "Buy a specific token by mint address using configured automatic sizing."
+    },
+    {
+      "name": "get_pulse_purchase_preview",
+      "description": "Return the Pulse asset data and SOL/USD funds available for a purchase."
+    },
+    {
+      "name": "buy_pulse_asset",
+      "description": "Purchase a Pulse asset by SOL quantity, USD value, or available-funds percentage."
+    },
+    {
+      "name": "get_config",
+      "description": "Get the current bot configuration as JSON."
+    },
+    {
+      "name": "get_rpc_pool_status",
+      "description": "List configured RPC pool slots without exposing API key values."
+    },
+    {
+      "name": "set_rpc_pool_key",
+      "description": "Set one Helius RPC pool key in the private local secrets.env file."
+    },
+    {
+      "name": "set_rpc_pool_skip_until",
+      "description": "Set or clear the skip-until date for an RPC pool slot."
+    },
+    {
+      "name": "update_config",
+      "description": "Update a single config key. The bot must be restarted for some settings."
+    },
+    {
+      "name": "get_config_catalog",
+      "description": "List every supported variable, type, range, description, and value."
+    },
+    {
+      "name": "validate_current_config",
+      "description": "Validate all current settings and return errors and risk warnings."
+    },
+    {
+      "name": "preview_strategy_profile",
+      "description": "Preview the guarded small-account profile without changing files."
+    },
+    {
+      "name": "apply_strategy_profile",
+      "description": "Apply the guarded profile atomically; requires confirm=true."
+    },
+    {
+      "name": "preview_risk_level",
+      "description": "Preview one of the 20 unified risk levels without changing files."
+    },
+    {
+      "name": "apply_risk_level",
+      "description": "Atomically apply a 1-20 unified risk level; requires confirm=true."
+    },
+    {
+      "name": "update_config_batch",
+      "description": "Validate and atomically update multiple settings from a JSON object."
+    },
+    {
+      "name": "analyze_trade_performance",
+      "description": "Analyze closed-trade performance and exit-reason distribution."
+    },
+    {
+      "name": "audit_open_positions",
+      "description": "Compare saved positions to wallet balances and live exit routes (read-only)."
+    },
+    {
+      "name": "get_position_exit_quote",
+      "description": "Get a read-only Jupiter exit quote for a persisted open position."
+    },
+    {
+      "name": "save_settings",
+      "description": "Save current settings to config.json."
+    },
+    {
+      "name": "get_open_positions",
+      "description": "Get all currently open (unsold) positions as JSON."
+    },
+    {
+      "name": "get_positions_status",
+      "description": "Get real-time position status (P&L, portfolio value, SOL price)."
+    },
+    {
+      "name": "get_graduation_status",
+      "description": "Check graduation status for all open positions or a specific mint."
+    },
+    {
+      "name": "get_bot_status",
+      "description": "Get overall bot status."
+    },
+    {
+      "name": "get_trade_history",
+      "description": "Get recent trade history records."
+    },
+    {
+      "name": "clear_trade_history",
+      "description": "Clear all trade history."
+    },
+    {
+      "name": "get_pnl_tally",
+      "description": "Get the persistent all-time P&L tally."
+    },
+    {
+      "name": "reset_pnl_tally",
+      "description": "Reset the all-time P&L tally to zero."
+    },
+    {
+      "name": "get_wallet_balances",
+      "description": "Get Funding, Meme-Coin, Savings, Perpetuals, and Spot wallet balances."
+    },
+    {
+      "name": "transfer_sol",
+      "description": "Transfer SOL over any directed route among the five application wallets."
+    },
+    {
+      "name": "move_all_sol",
+      "description": "Move all transferable SOL over any route among the five application wallets."
+    },
+    {
+      "name": "get_pulse_results",
+      "description": "Get all Pulse tab results."
+    },
+    {
+      "name": "set_pulse_match_mode",
+      "description": "Set the Pulse match mode."
+    },
+    {
+      "name": "clear_pulse_results",
+      "description": "Clear all Pulse results."
+    },
+    {
+      "name": "get_log",
+      "description": "Get the last N lines of the bot log."
+    },
+    {
+      "name": "clear_log",
+      "description": "Clear the bot log file."
+    },
+    {
+      "name": "get_pending_commands",
+      "description": "Get pending commands from the command queue."
+    },
+    {
+      "name": "clear_commands",
+      "description": "Clear the command queue."
+    },
+    {
+      "name": "get_fee_summary",
+      "description": "Get fee + ATA rent breakdown."
+    },
+    {
+      "name": "close_empty_token_accounts",
+      "description": "Close all empty token accounts to reclaim ATA rent."
+    },
+    {
+      "name": "refresh_pnl",
+      "description": "Force a P&L recompute."
+    },
+    {
+      "name": "close_position",
+      "description": "Manually close a position without executing an on-chain sell."
+    },
+    {
+      "name": "get_pulse_price_history",
+      "description": "Get price tracking for a specific mint."
+    },
+    {
+      "name": "get_bot_stats",
+      "description": "Get bot operational statistics and per-category rejection totals."
+    },
+    {
+      "name": "get_trending_meme_tokens",
+      "description": "Get trending/new tokens from Pump.fun and other launch sources."
+    },
+    {
+      "name": "search_meme_tokens",
+      "description": "Search for meme tokens by name, symbol, or mint address in Pulse results."
+    },
+    {
+      "name": "get_meme_market_stats",
+      "description": "Return aggregate statistics across all discovered meme tokens."
+    },
+    {
+      "name": "get_meme_signal_detail",
+      "description": "Return details for a specific Pulse signal by index (most recent first)."
+    },
+    {
+      "name": "enable_meme_signals",
+      "description": "Enable or disable automatic signal-based buying for the meme bot."
+    },
+    {
+      "name": "clear_meme_signals",
+      "description": "Clear all stored Pulse signal results."
+    },
+    {
+      "name": "get_meme_alerts",
+      "description": "Return recent high-quality meme trading alerts from Pulse results."
+    },
+    {
+      "name": "set_meme_alert_threshold",
+      "description": "Set the minimum Pulse buy-signal score to trigger an alert."
+    },
+    {
+      "name": "get_meme_win_rate",
+      "description": "Return the win rate for meme bot trading."
+    },
+    {
+      "name": "get_meme_best_worst_trades",
+      "description": "Return the best and worst meme trades."
+    },
+    {
+      "name": "get_meme_risk_status",
+      "description": "Return current risk metrics for meme bot trading."
+    },
+    {
+      "name": "get_meme_portfolio_concentration",
+      "description": "Return portfolio concentration analysis for meme positions."
+    },
+    {
+      "name": "get_meme_statistics",
+      "description": "Return comprehensive meme trading statistics."
+    },
+    {
+      "name": "add_to_blacklist",
+      "description": "Add a token mint to the blacklist (never buy this token)."
+    },
+    {
+      "name": "remove_from_blacklist",
+      "description": "Remove a token mint from the blacklist."
+    },
+    {
+      "name": "get_blacklist",
+      "description": "Return the current blacklist of token mints."
+    },
+    {
+      "name": "add_to_whitelist",
+      "description": "Add a token mint to the whitelist (only buy these tokens)."
+    },
+    {
+      "name": "remove_from_whitelist",
+      "description": "Remove a token mint from the whitelist."
+    },
+    {
+      "name": "get_whitelist",
+      "description": "Return the current whitelist of token mints."
+    },
+    {
+      "name": "set_meme_max_positions",
+      "description": "Set the maximum number of simultaneous meme positions."
+    },
+    {
+      "name": "set_meme_stop_loss_pct",
+      "description": "Set the hard stop loss percentage for meme positions."
+    },
+    {
+      "name": "set_meme_take_profit_pct",
+      "description": "Set the take profit percentage for meme positions."
+    },
+    {
+      "name": "set_meme_trailing_stop",
+      "description": "Set the trailing stop percentage for meme positions."
+    },
+    {
+      "name": "set_meme_position_size_pct",
+      "description": "Set the percentage of wallet to use per meme trade."
+    },
+    {
+      "name": "set_meme_slippage_bps",
+      "description": "Set the maximum slippage in basis points for meme swaps."
+    },
+    {
+      "name": "set_meme_min_liquidity",
+      "description": "Set the minimum liquidity (USD) required for a meme token to be considered."
+    },
+    {
+      "name": "set_meme_min_market_cap",
+      "description": "Set the minimum market cap (USD) for a meme token to be considered."
+    },
+    {
+      "name": "set_meme_min_volume_24h",
+      "description": "Set the minimum 24h volume (USD) for a meme token to be considered."
+    },
+    {
+      "name": "set_meme_max_token_age",
+      "description": "Set the maximum token age (minutes) for meme sniping (only buy new tokens)."
+    },
+    {
+      "name": "set_meme_min_holders",
+      "description": "Set the minimum number of token holders required for a meme token."
+    },
+    {
+      "name": "set_meme_max_creator_holdings_pct",
+      "description": "Set the max percentage of supply the creator/minter can hold (rug pull protection)."
+    },
+    {
+      "name": "get_meme_pulse_summary",
+      "description": "Return a summary of recent Pulse discovery results including top opportunities."
+    },
+    {
+      "name": "get_meme_position_detail",
+      "description": "Return details for a specific meme position by token mint."
+    },
+    {
+      "name": "get_meme_position_pnl",
+      "description": "Return P&L for a specific meme position."
+    },
+    {
+      "name": "get_meme_exposure",
+      "description": "Return total exposure across all open meme positions."
+    },
+    {
+      "name": "get_meme_total_pnl",
+      "description": "Return total realized and unrealized P&L for meme trading."
+    },
+    {
+      "name": "enable_meme_auto_buy",
+      "description": "Enable or disable automatic buying when signals are detected."
+    },
+    {
+      "name": "enable_meme_stop_loss",
+      "description": "Enable or disable stop loss protection for meme positions."
+    },
+    {
+      "name": "enable_meme_trailing_stop",
+      "description": "Enable or disable trailing stop for meme positions."
+    },
+    {
+      "name": "enable_meme_take_profit_ladder",
+      "description": "Enable or disable take-profit ladder for meme positions."
+    },
+    {
+      "name": "set_meme_tp_ladder_steps",
+      "description": "Set the take-profit ladder steps (format: gain%:close_pct,gain%:close_pct)."
+    },
+    {
+      "name": "set_meme_min_buy_amount",
+      "description": "Set the minimum buy amount in USD for meme trades."
+    },
+    {
+      "name": "set_meme_max_buy_amount",
+      "description": "Set the maximum buy amount in USD for meme trades."
+    },
+    {
+      "name": "get_meme_graduated_tokens",
+      "description": "Return tokens that have graduated from Pump.fun to Raydium."
+    },
+    {
+      "name": "get_meme_pending_graduations",
+      "description": "Return tokens that are pending graduation from Pump.fun."
+    },
+    {
+      "name": "set_meme_rug_detection",
+      "description": "Enable or disable rug detection for meme positions."
+    },
+    {
+      "name": "set_meme_volume_death_detection",
+      "description": "Enable or disable volume death detection (exit when volume dies)."
+    },
+    {
+      "name": "set_meme_momentum_reversal",
+      "description": "Enable or disable momentum reversal exit for meme positions."
+    },
+    {
+      "name": "set_meme_auto_savings",
+      "description": "Enable or disable auto savings sweep for meme bot profits."
+    },
+    {
+      "name": "set_meme_savings_threshold",
+      "description": "Set the savings sweep threshold (USD) for the meme bot."
+    },
+    {
+      "name": "get_meme_trade_detail",
+      "description": "Return details for a specific meme trade by index (most recent first)."
+    },
+    {
+      "name": "get_meme_position_timeout",
+      "description": "Set the auto-close timeout for meme positions (0 = disabled)."
+    },
+    {
+      "name": "start_perp_bot",
+      "description": "Start the perpetuals trading bot."
+    },
+    {
+      "name": "stop_perp_bot",
+      "description": "Stop the perpetuals trading bot."
+    },
+    {
+      "name": "sell_all_perps",
+      "description": "Panic close all open perpetual positions immediately."
+    },
+    {
+      "name": "get_perp_bot_status",
+      "description": "Return the current perpetuals bot status (running, stopped, etc.)."
+    },
+    {
+      "name": "get_perp_markets",
+      "description": "Return the list of available perpetual markets."
+    },
+    {
+      "name": "get_perp_market_detail",
+      "description": "Return detailed data for a specific perp market."
+    },
+    {
+      "name": "get_perp_orderbook",
+      "description": "Return the latest orderbook snapshot for a perp market."
+    },
+    {
+      "name": "get_perp_candles",
+      "description": "Return recent candle (kline) data for a perp market."
+    },
+    {
+      "name": "get_funding_rates",
+      "description": "Return current funding rates for all perp markets."
+    },
+    {
+      "name": "get_funding_history",
+      "description": "Return recent funding payment history for a perp market."
+    },
+    {
+      "name": "get_liquidations",
+      "description": "Return recent large liquidation events."
+    },
+    {
+      "name": "get_perp_price_changes",
+      "description": "Return multi-timeframe price changes for all perp markets."
+    },
+    {
+      "name": "get_perp_config",
+      "description": "Return the current perp configuration."
+    },
+    {
+      "name": "update_perp_config",
+      "description": "Update a single perp configuration value."
+    },
+    {
+      "name": "get_perp_config_catalog",
+      "description": "Return the catalog of all available perp config keys."
+    },
+    {
+      "name": "validate_perp_config_tool",
+      "description": "Validate the current perp configuration and return any warnings."
+    },
+    {
+      "name": "preview_perp_risk_level",
+      "description": "Preview the perp configuration for a specific risk level (1-20)."
+    },
+    {
+      "name": "apply_perp_risk_level",
+      "description": "Apply a risk level (1-20) to the perp configuration."
+    },
+    {
+      "name": "get_perp_positions",
+      "description": "Return all open perpetual positions."
+    },
+    {
+      "name": "open_perp_long",
+      "description": "Open a long perpetual position by symbol and notional size."
+    },
+    {
+      "name": "open_perp_short",
+      "description": "Open a short perpetual position by symbol and notional size."
+    },
+    {
+      "name": "close_perp_position",
+      "description": "Close (reduce) a perp position by symbol and percentage."
+    },
+    {
+      "name": "get_perp_position_detail",
+      "description": "Return detailed data for a specific perp position."
+    },
+    {
+      "name": "get_perp_position_pnl",
+      "description": "Return the P&L for a specific perp position."
+    },
+    {
+      "name": "set_perp_leverage",
+      "description": "Set leverage for an existing perp position or as default."
+    },
+    {
+      "name": "set_perp_margin_mode",
+      "description": "Set perp margin mode to isolated or cross."
+    },
+    {
+      "name": "get_perp_exposure",
+      "description": "Return total perp exposure and margin usage summary."
+    },
+    {
+      "name": "get_perp_open_orders",
+      "description": "Return all open perp orders."
+    },
+    {
+      "name": "cancel_perp_order",
+      "description": "Cancel a specific perp order by order ID."
+    },
+    {
+      "name": "cancel_all_perp_orders",
+      "description": "Cancel all open perp orders, optionally filtered by symbol."
+    },
+    {
+      "name": "get_perp_order_history",
+      "description": "Return recent perp order history."
+    },
+    {
+      "name": "get_perp_trade_history",
+      "description": "Return perp trade history."
+    },
+    {
+      "name": "clear_perp_trade_history",
+      "description": "Clear the perp trade history file."
+    },
+    {
+      "name": "get_perp_pnl_tally",
+      "description": "Return the all-time perp P&L tally."
+    },
+    {
+      "name": "reset_perp_pnl_tally",
+      "description": "Reset the all-time perp P&L tally to zero."
+    },
+    {
+      "name": "analyze_perp_performance",
+      "description": "Analyze perp trade performance and return summary stats."
+    },
+    {
+      "name": "get_perp_wallet_balances",
+      "description": "Return the perp trading and savings wallet balances."
+    },
+    {
+      "name": "transfer_perp_sol",
+      "description": "Transfer SOL between trading and savings wallets."
+    },
+    {
+      "name": "get_perp_margin_ratio",
+      "description": "Return the current perp margin ratio / health."
+    },
+    {
+      "name": "get_perp_liquidation_price",
+      "description": "Return the estimated liquidation price for a perp position."
+    },
+    {
+      "name": "get_perp_signals",
+      "description": "Return the latest perp trading signals."
+    },
+    {
+      "name": "get_perp_signal_detail",
+      "description": "Return details for a specific perp signal."
+    },
+    {
+      "name": "enable_perp_signal",
+      "description": "Re-enable signal generation for a blocked perp market."
+    },
+    {
+      "name": "disable_perp_signal",
+      "description": "Disable signal generation for a perp market."
+    },
+    {
+      "name": "get_perp_risk_status",
+      "description": "Return the current perp risk status (leverage, exposure, etc.)."
+    },
+    {
+      "name": "set_perp_max_leverage",
+      "description": "Set the perp max leverage cap."
+    },
+    {
+      "name": "set_perp_max_exposure",
+      "description": "Set the perp max total exposure in USD."
+    },
+    {
+      "name": "get_perp_var_estimate",
+      "description": "Return a simple parametric VaR estimate for open positions."
+    },
+    {
+      "name": "get_perp_log",
+      "description": "Return the tail of the perp bot log."
+    },
+    {
+      "name": "clear_perp_log",
+      "description": "Clear the perp bot log file."
+    },
+    {
+      "name": "update_perp_config_batch",
+      "description": "Update multiple perp config values at once."
+    },
+    {
+      "name": "save_perp_settings",
+      "description": "Persist the current perp configuration to disk."
+    },
+    {
+      "name": "set_perp_stop_loss",
+      "description": "Set the hard stop loss percentage for perp positions."
+    },
+    {
+      "name": "set_perp_take_profit_ladder",
+      "description": "Set the take-profit ladder steps string (e.g. '2%:30,5%:30,10%:20')."
+    },
+    {
+      "name": "set_perp_trailing_stop",
+      "description": "Configure the trailing stop activation and drawdown percentages."
+    },
+    {
+      "name": "set_perp_position_size",
+      "description": "Set position sizing: % of wallet as margin and max notional cap."
+    },
+    {
+      "name": "set_perp_direction",
+      "description": "Set allowed trade directions: 'long', 'short', or 'both'."
+    },
+    {
+      "name": "modify_perp_order",
+      "description": "Modify an existing perp order's price and/or size."
+    },
+    {
+      "name": "set_perp_order_type",
+      "description": "Set the default perp order type: MARKET, LIMIT, POST_ONLY, IOC, or FOK."
+    },
+    {
+      "name": "set_perp_slippage",
+      "description": "Set the max acceptable slippage in basis points for perp orders."
+    },
+    {
+      "name": "search_perp_markets",
+      "description": "Search perp markets by symbol substring with optional volume/leverage filters."
+    },
+    {
+      "name": "get_top_perp_markets",
+      "description": "Return top perp markets sorted by volume, open interest, or 24h change."
+    },
+    {
+      "name": "get_perp_market_stats",
+      "description": "Return aggregate statistics across all perp markets."
+    },
+    {
+      "name": "get_perp_signal_history",
+      "description": "Return the history of past perp signals (executed and rejected)."
+    },
+    {
+      "name": "clear_perp_signal_history",
+      "description": "Clear the perp signal history file."
+    },
+    {
+      "name": "get_perp_signal_summary",
+      "description": "Return a summary of signal generation stats (counts by type, direction)."
+    },
+    {
+      "name": "get_perp_fee_summary",
+      "description": "Return a summary of fees paid across all perp trades."
+    },
+    {
+      "name": "get_perp_funding_cost",
+      "description": "Return total funding payments paid/received for a position or all."
+    },
+    {
+      "name": "get_perp_correlation_matrix",
+      "description": "Return a simple correlation matrix between open perp positions."
+    },
+    {
+      "name": "set_perp_liquidation_floor",
+      "description": "Set the minimum liquidation distance floor percentage."
+    },
+    {
+      "name": "set_perp_funding_exit",
+      "description": "Set the max adverse funding rate before the bot exits a position."
+    },
+    {
+      "name": "refresh_perp_pnl",
+      "description": "Force a refresh of the perp P&L tally from trade history."
+    },
+    {
+      "name": "get_perp_trade_detail",
+      "description": "Return details for a specific perp trade by its index in history."
+    },
+    {
+      "name": "get_perp_margin_info",
+      "description": "Return detailed margin information for all open perp positions."
+    },
+    {
+      "name": "set_perp_auto_savings",
+      "description": "Configure auto savings sweep for perp profits."
+    },
+    {
+      "name": "set_perp_poll_intervals",
+      "description": "Set polling intervals for market data, position monitoring, and signals."
+    },
+    {
+      "name": "set_perp_market_filters",
+      "description": "Set market entry filters: min 24h volume, min open interest, max spread."
+    },
+    {
+      "name": "set_perp_allowed_tokens",
+      "description": "Set the comma-separated list of allowed base tokens (empty = all allowed)."
+    },
+    {
+      "name": "set_perp_blocked_tokens",
+      "description": "Set the comma-separated list of blocked base tokens (never trade these)."
+    },
+    {
+      "name": "set_perp_dry_run",
+      "description": "Enable or disable perp dry-run (practice) mode."
+    },
+    {
+      "name": "set_perp_auto_execute",
+      "description": "Enable or disable automatic perp order execution."
+    },
+    {
+      "name": "set_perp_signal_mode",
+      "description": "Set the perp signal generation mode."
+    },
+    {
+      "name": "set_perp_position_timeout",
+      "description": "Set the auto-close position timeout in seconds (0 = disable)."
+    },
+    {
+      "name": "set_perp_testnet",
+      "description": "Switch perp API between testnet and mainnet."
+    },
+    {
+      "name": "start_spot_bot",
+      "description": "Start the spot trading bot."
+    },
+    {
+      "name": "stop_spot_bot",
+      "description": "Stop the spot trading bot."
+    },
+    {
+      "name": "sell_all_spot",
+      "description": "Panic close all open spot positions immediately."
+    },
+    {
+      "name": "get_spot_bot_status",
+      "description": "Return the current spot bot status (running, stopped, etc.)."
+    },
+    {
+      "name": "get_spot_markets",
+      "description": "Return the list of monitored spot markets with current data."
+    },
+    {
+      "name": "get_spot_market_detail",
+      "description": "Return detailed market data for a specific token mint."
+    },
+    {
+      "name": "search_spot_tokens",
+      "description": "Search for tokens by name, symbol, or mint address via Jupiter."
+    },
+    {
+      "name": "get_trending_spot_tokens",
+      "description": "Get trending/popular tokens from Jupiter."
+    },
+    {
+      "name": "get_spot_market_stats",
+      "description": "Return aggregate statistics across all monitored spot markets."
+    },
+    {
+      "name": "refresh_spot_markets",
+      "description": "Trigger a market data refresh from Jupiter."
+    },
+    {
+      "name": "get_token_price",
+      "description": "Get the current USD price of a token."
+    },
+    {
+      "name": "get_token_prices",
+      "description": "Get USD prices for multiple tokens (comma-separated mints)."
+    },
+    {
+      "name": "get_sol_price",
+      "description": "Get the current SOL price in USD."
+    },
+    {
+      "name": "get_token_candles",
+      "description": "Get OHLCV candlestick data for a token."
+    },
+    {
+      "name": "get_token_market_data",
+      "description": "Get aggregated market data for a token (price, volume, change)."
+    },
+    {
+      "name": "get_rsi",
+      "description": "Calculate RSI for a token based on recent candle data."
+    },
+    {
+      "name": "get_macd",
+      "description": "Calculate MACD for a token."
+    },
+    {
+      "name": "get_moving_averages",
+      "description": "Calculate SMA and EMA for a token."
+    },
+    {
+      "name": "get_bollinger_bands",
+      "description": "Calculate Bollinger Bands for a token."
+    },
+    {
+      "name": "get_volume_analysis",
+      "description": "Analyze volume patterns for a token."
+    },
+    {
+      "name": "get_all_indicators",
+      "description": "Get all technical indicators for a token in one call."
+    },
+    {
+      "name": "get_atr",
+      "description": "Calculate ATR (Average True Range) for a token."
+    },
+    {
+      "name": "get_spot_signals",
+      "description": "Return recent spot trading signals."
+    },
+    {
+      "name": "get_spot_signal_detail",
+      "description": "Return details for a specific signal by index (from most recent)."
+    },
+    {
+      "name": "enable_spot_signals",
+      "description": "Enable or disable automatic signal generation."
+    },
+    {
+      "name": "get_signal_summary",
+      "description": "Return a summary of recent signals by type and strength."
+    },
+    {
+      "name": "clear_spot_signals",
+      "description": "Clear all stored spot signals."
+    },
+    {
+      "name": "get_spot_config",
+      "description": "Return the full spot trading configuration."
+    },
+    {
+      "name": "update_spot_config",
+      "description": "Update a single spot configuration field."
+    },
+    {
+      "name": "batch_update_spot_config",
+      "description": "Update multiple spot configuration fields at once."
+    },
+    {
+      "name": "get_spot_config_catalog",
+      "description": "Return the catalog of all available spot config fields with metadata."
+    },
+    {
+      "name": "validate_spot_config_values",
+      "description": "Validate the current spot configuration and return warnings."
+    },
+    {
+      "name": "get_spot_config_field",
+      "description": "Get the current value and metadata for a single config field."
+    },
+    {
+      "name": "get_spot_positions",
+      "description": "Return all open spot positions."
+    },
+    {
+      "name": "get_spot_position_detail",
+      "description": "Return details for a specific spot position by token mint."
+    },
+    {
+      "name": "get_spot_position_pnl",
+      "description": "Return P&L for a specific spot position."
+    },
+    {
+      "name": "get_spot_exposure",
+      "description": "Return total exposure across all open spot positions."
+    },
+    {
+      "name": "close_spot_position",
+      "description": "Close a specific spot position by token mint."
+    },
+    {
+      "name": "spot_market_buy",
+      "description": "Execute a manual market buy order for a token."
+    },
+    {
+      "name": "spot_market_sell",
+      "description": "Execute a manual market sell order for a token (sell all holdings)."
+    },
+    {
+      "name": "spot_limit_buy",
+      "description": "Place a limit buy order for a token (queued for engine execution)."
+    },
+    {
+      "name": "cancel_spot_order",
+      "description": "Cancel a pending spot order for a token."
+    },
+    {
+      "name": "get_spot_open_orders",
+      "description": "Return any pending spot orders."
+    },
+    {
+      "name": "get_spot_trade_history",
+      "description": "Return recent spot trade history."
+    },
+    {
+      "name": "get_spot_trade_detail",
+      "description": "Return details for a specific trade by index."
+    },
+    {
+      "name": "clear_spot_trade_history",
+      "description": "Clear all spot trade history."
+    },
+    {
+      "name": "get_spot_trade_pnl_tally",
+      "description": "Return the aggregate P&L tally for spot trading."
+    },
+    {
+      "name": "get_spot_total_pnl",
+      "description": "Return total realized and unrealized P&L for spot trading."
+    },
+    {
+      "name": "get_spot_win_rate",
+      "description": "Return the win rate for spot trading."
+    },
+    {
+      "name": "get_spot_best_worst_trades",
+      "description": "Return the best and worst spot trades."
+    },
+    {
+      "name": "get_spot_risk_status",
+      "description": "Return current risk metrics for spot trading."
+    },
+    {
+      "name": "set_spot_max_positions",
+      "description": "Set the maximum number of simultaneous spot positions."
+    },
+    {
+      "name": "set_spot_max_exposure",
+      "description": "Set the maximum total exposure for spot trading."
+    },
+    {
+      "name": "get_spot_portfolio_concentration",
+      "description": "Return portfolio concentration analysis for spot positions."
+    },
+    {
+      "name": "get_spot_wallet_balances",
+      "description": "Return spot wallet balances (USDC, SOL, and token holdings)."
+    },
+    {
+      "name": "get_spot_token_balance",
+      "description": "Get a specific token balance for a wallet."
+    },
+    {
+      "name": "transfer_spot_to_savings",
+      "description": "Transfer funds from spot trading wallet to savings wallet."
+    },
+    {
+      "name": "get_spot_logs",
+      "description": "Return recent spot bot log lines."
+    },
+    {
+      "name": "clear_spot_logs",
+      "description": "Clear the spot bot log file."
+    },
+    {
+      "name": "get_spot_alerts",
+      "description": "Return recent spot trading alerts."
+    },
+    {
+      "name": "set_spot_alert_threshold",
+      "description": "Set the minimum signal score to trigger an alert."
+    },
+    {
+      "name": "enable_spot_dca",
+      "description": "Enable or disable DCA (Dollar Cost Averaging) for spot positions."
+    },
+    {
+      "name": "set_spot_dca_steps",
+      "description": "Set the maximum number of DCA steps per position."
+    },
+    {
+      "name": "set_spot_dca_interval",
+      "description": "Set the DCA interval in seconds."
+    },
+    {
+      "name": "set_spot_risk_level",
+      "description": "Set the spot risk level (1-20) and apply the coordinated profile."
+    },
+    {
+      "name": "get_spot_risk_levels",
+      "description": "Return all 20 spot risk levels with their names."
+    },
+    {
+      "name": "enable_spot_rebalancing",
+      "description": "Enable or disable portfolio rebalancing."
+    },
+    {
+      "name": "set_spot_rebalance_threshold",
+      "description": "Set the rebalancing threshold percentage."
+    },
+    {
+      "name": "add_allowed_spot_token",
+      "description": "Add a token to the allowed list for spot trading."
+    },
+    {
+      "name": "add_blocked_spot_token",
+      "description": "Add a token to the blocked list for spot trading."
+    },
+    {
+      "name": "remove_allowed_spot_token",
+      "description": "Remove a token from the allowed list."
+    },
+    {
+      "name": "get_spot_quote",
+      "description": "Get a swap quote from Jupiter DEX."
+    },
+    {
+      "name": "get_spot_swap_transaction",
+      "description": "Get a serialized swap transaction from Jupiter."
+    },
+    {
+      "name": "set_spot_slippage",
+      "description": "Set the maximum slippage in basis points for spot swaps."
+    },
+    {
+      "name": "get_spot_statistics",
+      "description": "Return comprehensive spot trading statistics."
+    },
+    {
+      "name": "reset_spot_pnl_tally",
+      "description": "Reset the spot P&L tally to zero."
+    },
+    {
+      "name": "start_mirror_bot",
+      "description": "Start the mirror trading bot (copy whale trades)."
+    },
+    {
+      "name": "stop_mirror_bot",
+      "description": "Stop the mirror trading bot."
+    },
+    {
+      "name": "sell_all_mirror_positions",
+      "description": "Close all mirror positions immediately."
+    },
+    {
+      "name": "get_mirror_bot_status",
+      "description": "Return the current mirror bot status and statistics."
+    },
+    {
+      "name": "get_mirror_config",
+      "description": "Return the full mirror trading configuration."
+    },
+    {
+      "name": "update_mirror_config_field",
+      "description": "Update a single mirror configuration field."
+    },
+    {
+      "name": "add_mirror_whale",
+      "description": "Add a whale wallet to monitor. Mode: spot, perp, or both."
+    },
+    {
+      "name": "remove_mirror_whale",
+      "description": "Remove a whale wallet from monitoring."
+    },
+    {
+      "name": "toggle_mirror_whale",
+      "description": "Enable or disable a whale wallet for mirror trading."
+    },
+    {
+      "name": "get_mirror_whale_stats",
+      "description": "Return performance stats for a specific whale."
+    },
+    {
+      "name": "get_all_mirror_whale_stats",
+      "description": "Return performance stats for all monitored whales."
+    },
+    {
+      "name": "get_mirror_whales",
+      "description": "Return the list of all monitored whale wallets."
+    },
+    {
+      "name": "get_mirror_trades",
+      "description": "Return recent mirror trade history."
+    },
+    {
+      "name": "clear_mirror_trade_history",
+      "description": "Clear all mirror trade history."
+    },
+    {
+      "name": "set_mirror_allocation_pct",
+      "description": "Set the percentage of wallet allocated to mirror trading."
+    },
+    {
+      "name": "set_mirror_max_trade_usd",
+      "description": "Set the maximum USD per mirrored trade."
+    },
+    {
+      "name": "set_mirror_mode",
+      "description": "Set mirror mode: 'spot', 'perp', or 'both'."
+    },
+    {
+      "name": "set_mirror_dry_run",
+      "description": "Enable or disable dry-run mode for mirror trading."
+    },
+    {
+      "name": "set_mirror_copy_sells",
+      "description": "Enable or disable copying whale sell trades (not just buys)."
+    },
+    {
+      "name": "set_mirror_stop_loss_pct",
+      "description": "Set the stop loss percentage for mirror positions."
+    },
+    {
+      "name": "set_mirror_take_profit_pct",
+      "description": "Set the take profit percentage for mirror positions."
+    }
+  ],
+  "icon": "https://solsniperbot.co/mcp/mcp-software-box.png"
+}

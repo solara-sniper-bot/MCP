@@ -1,7 +1,7 @@
 <!-- mcp-name: co.solsniperbot/solana-snipe-bot-mcp -->
 # Solana Sniper Bot MCP
 
-![Solana Sniper Bot MCP](assets/mcp-software-box.png)
+![Solana Sniper Bot MCP](https://solsniperbot.co/mcp/mcp-software-box.png)
 
 **Autonomous Solana trading bot with 281 MCP tools for AI-assisted control.**
 
