@@ -33,8 +33,8 @@ Using the 281 MCP tools, your AI agent can start/stop bots, execute trades, conf
 
 The Solana Sniper Bot V4 Windows application (required to use this MCP server) has the following pricing:
 
-- **7-day free trial** (168 hours of actual bot running time)
-- **First month: $49.99** (50% off with promo code `SOLV4FIRST50`)
+- **168 hours of live bot usage** (full version, no restrictions, no credit card required)
+- **After trial: First month $49.99** (50% off with promo code `SOLV4FIRST50`)
 - **$99.99/month** thereafter
 - **Cancel anytime**
 
