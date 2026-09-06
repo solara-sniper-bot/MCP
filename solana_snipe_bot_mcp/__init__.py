@@ -9,7 +9,7 @@ The unified server exposes 208 tools covering Meme, Perpetuals, and Spot
 trading modes in a single FastMCP instance.
 """
 
-__version__ = "4.0.3"
+__version__ = "4.0.4"
 
 __all__ = ["mcp", "main", "__version__"]
 

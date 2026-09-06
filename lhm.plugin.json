@@ -2,7 +2,7 @@
   "description": "Autonomous Solana trading bot with 281 MCP tools across Meme sniping (Pump.fun), Spot trading (Jupiter), Perpetual futures (long/short with leverage), and Mirror copy-trading modes. Requires the Solana Sniper Bot V4 Windows application.",
   "identifier": "solara-sniper-bot-solana-snipe-bot-mcp",
   "name": "Solana Sniper Bot MCP",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "homepage": "https://solsniperbot.co/mcp/",
   "author": "solara-sniper-bot",
   "authorUrl": "https://github.com/solara-sniper-bot",

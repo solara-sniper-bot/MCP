@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "solana-snipe-bot-mcp"
-version = "4.0.3"
+version = "4.0.4"
 description = "Solana Sniper Bot MCP Server — control an autonomous Solana trading bot via 281 MCP tools across four modes: Meme sniping, Spot, Perpetuals, and Mirror copy-trading."
 readme = "README_pypi.md"
 license = {text = "Proprietary"}

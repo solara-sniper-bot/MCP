@@ -8,12 +8,12 @@
     "source": "github"
   },
   "websiteUrl": "https://solsniperbot.co/mcp/",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "solana-snipe-bot-mcp",
-      "version": "4.0.3",
+      "version": "4.0.4",
       "transport": {
         "type": "stdio"
       }
